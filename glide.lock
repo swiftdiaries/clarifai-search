@@ -1,0 +1,19 @@
+hash: a10bb3f78c6e7740e2b9878feb863c339c89152f5b3ab91b983d78cc999ca054
+updated: 2017-11-08T13:38:55.077784605-05:00
+imports:
+- name: github.com/bradfitz/slice
+  version: d9036e2120b5ddfa53f3ebccd618c4af275f47da
+- name: github.com/clarifai/clarifai-go
+  version: 34e1c18b44e6ecfc4dab7ad935514dfad2c05bcc
+- name: github.com/garyburd/redigo
+  version: 47dc60e71eed504e3ef8e77ee3c6fe720f3be57f
+  subpackages:
+  - internal
+  - redis
+- name: github.com/mpmlj/clarifai-client-go
+  version: 213583be50406c129db06900d99a4d02894caf60
+- name: go4.org
+  version: 034d17a462f7b2dcd1a4a73553ec5357ff6e6c6e
+  subpackages:
+  - reflectutil
+testImports: []
