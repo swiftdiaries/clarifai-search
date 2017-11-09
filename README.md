@@ -10,6 +10,17 @@ Description
 
 The project uses [Redis](http://redis.io), to store results.  Please install it and ensure it is running before starting.
 
+Redis Setup
+-----------
+     wget http://download.redis.io/releases/redis-4.0.2.tar.gz
+     tar xzf redis-4.0.2.tar.gz
+     cd redis-4.0.2
+     make
+
+To start a server,
+
+     src/redis-server
+
 Setup
 -----
 
