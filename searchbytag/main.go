@@ -48,14 +48,18 @@ func main() {
 func populateResults(apikey string) {
 	imageURLs := fetch.TextFiletoURLs()
 	var response string //resp is a temporary string
+	const percent = '%'
 
-	for _, imageURL := range imageURLs {
+	for i, imageURL := range imageURLs {
 		response = store.Get(imageURL)
 		if response == "" {
 			result := fetch.GetPrediction(apikey, imageURL)
 			err := store.Set(imageURL, result)
 			if err != nil {
 				fmt.Print(err)
+			}
+			if i%10 == 0 {
+				fmt.Printf("%d%x done", i, percent)
 			}
 		}
 	}
