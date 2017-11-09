@@ -45,7 +45,13 @@ From the command line you can, (Ensure you are in the root of the project direct
      
      $GOPATH/bin/searchbytag
 
-You should now see a HTML page with a Text Field, Enter a Search Tag to see results.
+You should now see a HTML page with a Text Field, Enter a Search Tag to see results.<br>
+Sample Text Field
+-----------------
+![Sample Textfield Entry](exampletextfield.png) <br>
+Sample Results
+--------------
+![Sample Results](exampleresults.png)
 
      
      
