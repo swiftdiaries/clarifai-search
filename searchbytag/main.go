@@ -38,7 +38,6 @@ func main() {
 	}
 
 	populateResults(apikey)
-	//generateResults(searchTag)
 
 	http.HandleFunc("/", resultDisplay)
 	http.HandleFunc("/result", output)
@@ -107,7 +106,6 @@ func output(w http.ResponseWriter, r *http.Request) {
 		queue := generateResults(r.Form["searchtag"][0])
 		t, _ := template.ParseFiles("result.html")
 		t.Execute(w, queue)
-		//http.Redirect(w, r, "http://localhost:9090/result", http.StatusSeeOther)
 	}
 }
 
